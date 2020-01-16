@@ -22,7 +22,8 @@
 In the first step, I'll use OpenCV's implementation of Haar feature-based cascade classifiers to detect human faces in images. In the seond step, I'll use a pre-trained VGG16 model to detect dogs in images. In the third step, I'll create a CNN that classifies dog breeds. I'll create my CNN from scratch to attain a test accuracy of at least 1%. In the fourth step, I'll use the pre-trained VGG-16 model as a fixed feature extractor, where the last convolutional output of VGG-16 is fed as input to my model. In Step 5, I'll use transfer learning to create a CNN using VGG-19 bottleneck features. In the last step, I'll write an algorithm that accepts a file path to an image and first determines whether the image contains a human, dog, or neither. Then, if a dog is detected in the image, return the predicted breed. If a human is detected in the image, return the resembling dog breed. Otherwise, it provides output that indicates an error.
 
 ### Benchmark Model
-<p> Our model will be compared with different benchmark models in a [kaggle competition](https://www.kaggle.com/c/dog-breed-identification/discussion)
+<p> Our model will be compared with different benchmark models in a 
+[kaggle competition](https://www.kaggle.com/c/dog-breed-identification/discussion)
 
 ### Evaluation Metrics
 <p> Since we are dealing with a multi-classification problem here and the data is slightly imbalanced, I used accuracy evaluation metric and negative log-likelihood loss function. The main objective in a learning model is to reduce (minimize) the loss function's value with respect to the model's parameters by changing the weight vector values through different optimization methods, such as backpropagation in neural networks.
@@ -35,6 +36,6 @@ In the first step, I'll use OpenCV's implementation of Haar feature-based cascad
   - [Step 3](#step3): Create a CNN to Classify Dog Breeds (from Scratch)
   - [Step 4](#step4): Use a CNN to Classify Dog Breeds (using Transfer Learning)
   - [Step 5](#step5): Create a CNN to Classify Dog Breeds (using Transfer Learning)
-  - [Step 6](#step6): Write your Algorithm
+  - [Step 6](#step6): Write Algorithm
 
 [1] Olga Russakovsky*, Jia Deng*, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg and Li Fei-Fei. (* = equal contribution) ImageNet Large Scale Visual Recognition Challenge. IJCV, 2015.
