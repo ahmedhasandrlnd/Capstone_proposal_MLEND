@@ -23,7 +23,7 @@ In the first step, I'll use OpenCV's implementation of Haar feature-based cascad
 
 ### Benchmark Model
 <p> Our model will be compared with different benchmark models in a 
-[kaggle competition](https://www.kaggle.com/c/dog-breed-identification/discussion)
+kaggle competition(https://www.kaggle.com/c/dog-breed-identification/discussion)
 
 ### Evaluation Metrics
 <p> Since we are dealing with a multi-classification problem here and the data is slightly imbalanced, I used accuracy evaluation metric and negative log-likelihood loss function. The main objective in a learning model is to reduce (minimize) the loss function's value with respect to the model's parameters by changing the weight vector values through different optimization methods, such as backpropagation in neural networks.
